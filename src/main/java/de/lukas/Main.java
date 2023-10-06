@@ -15,5 +15,21 @@ public class Main {
             // for you, but you can always add more by pressing Cmd+F8.
             System.out.println("i = " + i);
         }
+
+        // A random number will be printed 5 times
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Random number: " + Math.random());
+        }
+        // Now ill print something in the same line
+        System.out.print("Hello and welcome!");
+        System.out.print(" and this here will be added");
+        // Now some numbers
+        for (int i = 1; i <= 5; i++) {
+            System.out.println(i);
+        }
+
+        int eins = 11;
+        int zwei = 11;
+        System.out.println("Das Ergebniss ist: " + (eins + zwei));
     }
 }
