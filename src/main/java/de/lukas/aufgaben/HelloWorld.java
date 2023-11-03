@@ -1,4 +1,4 @@
-package de.lukas;
+package de.lukas.aufgaben;
 
 import java.util.Scanner;
 
