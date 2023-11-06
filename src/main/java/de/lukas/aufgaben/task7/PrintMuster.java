@@ -3,6 +3,11 @@ package de.lukas.aufgaben.task7;
 import java.util.Scanner;
 
 public class PrintMuster {
+    /**
+     * Main method to execute the program.
+     *
+     * @param args The command-line arguments.
+     */
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Bitte eine Zahl zwischen 1 und 20 eingeben:");
@@ -16,6 +21,11 @@ public class PrintMuster {
         }
     }
 
+    /**
+     * Prints a triangle made of asterisks with a specified number of lines.
+     *
+     * @param lines the number of lines in the triangle
+     */
     private static void printTriangle(int lines) {
         for (int i = 1; i <= lines; i++) {
             for (int j = 0; j < i; j++) {

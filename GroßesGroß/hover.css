@@ -7,6 +7,83 @@
 
  * Hover.css Copyright Ian Lunn 2017. Generated with Sass.
  */
+
+
+@keyframes gradientMovement {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #ff7e5f, #00a7ff);
+    background-size: 200% 200%;
+    animation: gradientMovement 2s ease infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 80%;
+    margin-top: 20px;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px);
+}
+
+.grid-item img {
+    max-width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+
+.footer-description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    color: white;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: transparent;
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
+
+
 /* 2D TRANSITIONS */
 /* Grow */
 .hvr-grow {
