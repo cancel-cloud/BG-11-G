@@ -4,10 +4,10 @@ import java.util.Scanner;
 
 public class Task5 {
     /**
-     * The main method is the entry point of the program. It calls three methods: Währungsrechner(),
-     * Zinsrechner(), and Sinusfunktion().
+     * Die main-Methode ist der Einstiegspunkt des Programms. Sie ruft drei Methoden auf: Währungsrechner(),
+     * Zinsrechner() und Sinusfunktion().
      *
-     * @param args An array of command-line arguments.
+     * @param args Ein Array von Befehlszeilenargumenten.
      */
     public static void main(String[] args) {
         Zinsrechner();
@@ -15,16 +15,15 @@ public class Task5 {
         Sinusfunktion();
     }
 
-
     /**
-     * Performs currency conversion from Euro to US-Dollar.
+     * Führt die Währungsumrechnung von Euro in US-Dollar durch.
      * <p>
-     * This method prompts the user to enter the amount of Euro to be converted,
-     * calculates the equivalent amount in US-Dollar, and prints the result.
+     * Diese Methode fordert den Benutzer auf, den umzurechnenden Euro-Betrag einzugeben,
+     * berechnet den entsprechenden Betrag in US-Dollar und gibt das Ergebnis aus.
      *
      * @return void
      */
-    // Task 5.1
+    // Aufgabe 5.1
     public static void Währungsrechner() {
         Scanner input = new Scanner(System.in);
         System.out.println("Geben Sie die Menge an Euro ein, die Sie umrechnen möchten:");
@@ -33,12 +32,11 @@ public class Task5 {
         System.out.format("%.2f Euro sind %.2f US-Dollar (Stand 6.10.2023)\n", euro, usd);
     }
 
-
     /**
-     * Calculates and prints the interest for a given principal amount, interest rate, and time period.
-     * The result is printed in the console.
+     * Berechnet und gibt die Zinsen für einen gegebenen Anfangsbetrag, Zinssatz und Laufzeit aus.
+     * Das Ergebnis wird in der Konsole angezeigt.
      */
-    // Task 5.2
+    // Aufgabe 5.2
     public static void Zinsrechner() {
         double grundbetrag = 5000;  // Euro
         double zinssatz = 0.05;     // 5%
@@ -48,66 +46,65 @@ public class Task5 {
     }
 
     /**
-     * This method calculates and prints the sinus value of a given angle in degrees.
-     * The angle is converted to radians before calculating the sinus value.
+     * Diese Methode berechnet und gibt den Sinuswert eines gegebenen Winkels in Grad aus.
+     * Der Winkel wird vor der Berechnung des Sinuswerts in Bogenmaß umgewandelt.
      */
-    // Task 5.3
+    // Aufgabe 5.3
     public static void Sinusfunktion() {
         double winkelInGrad = 90;
-        double winkelInBogenmass = Math.toRadians(winkelInGrad);
-        double sinus = Math.sin(winkelInBogenmass);
+        double winkelInBogenmaß = Math.toRadians(winkelInGrad);
+        double sinus = Math.sin(winkelInBogenmaß);
         System.out.println("Der Sinus von " + winkelInGrad + " Grad ist " + sinus);
     }
 
-
     /**
-     * Generates a random number between 1 and 100 (inclusive) and prints it to the console.
+     * Generiert eine zufällige Zahl zwischen 1 und 100 (einschließlich) und gibt sie in der Konsole aus.
      *
      * @param none
      * @return void
      */
-    // Task 5.4
+    // Aufgabe 5.4
     public void Zufallszahlen() {
         int randNum = (int) (Math.random() * 100) + 1;
         System.out.println("Die Zufallszahl zwischen 1 und 100 ist: " + randNum);
     }
 
     /**
-     * Generates a random number between 1 and 6 and prints it as the dice roll result.
+     * Generiert eine zufällige Zahl zwischen 1 und 6 und gibt sie als Ergebnis eines Würfelwurfs aus.
      */
-    // Task 5.5
+    // Aufgabe 5.5
     public void Würfel() {
         int randNum = (int) (Math.random() * 6) + 1;
         System.out.print("Die Würfelzahl ist: " + randNum);
     }
 
-    // Task 5.6
+    // Aufgabe 5.6
 
     /**
-     * Calculates the Body Mass Index (BMI) based on weight and height.
+     * Berechnet den Body-Mass-Index (BMI) basierend auf Gewicht und Größe.
      * <p>
-     * Usage:
-     * - Call BMI() to calculate and print the BMI.
+     * Verwendung:
+     * - Rufen Sie BMI() auf, um den BMI zu berechnen und auszugeben.
      * <p>
-     * Note:
-     * - The weight should be in kilograms (kg).
-     * - The height should be in meters (m).
+     * Hinweis:
+     * - Das Gewicht sollte in Kilogramm (kg) angegeben werden.
+     * - Die Größe sollte in Metern (m) angegeben werden.
      */
     public void BMI() {
         double gewicht = 75.0;
-        double groesse = 1.8;
-        double bmi = berechneBMI(gewicht, groesse);
+        double größe = 1.8;
+        double bmi = berechneBMI(gewicht, größe);
         System.out.println("Der BMI beträgt: " + bmi);
     }
 
     /**
-     * Calculates the Body Mass Index (BMI) based on the given weight and height.
+     * Berechnet den Body-Mass-Index (BMI) basierend auf dem angegebenen Gewicht und der Größe.
      *
-     * @param gewicht the weight in kilograms
-     * @param groesse the height in meters
-     * @return the calculated BMI as a double value
+     * @param gewicht das Gewicht in Kilogramm
+     * @param größe   die Größe in Metern
+     * @return der berechnete BMI als double-Wert
      */
-    public static double berechneBMI(double gewicht, double groesse) {
-        return gewicht / (groesse * groesse);
+    public static double berechneBMI(double gewicht, double größe) {
+        return gewicht / (größe * größe);
     }
 }

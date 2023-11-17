@@ -15,6 +15,7 @@ public class Task6 {
         BMICalculation.main(args);
         QuadraticFunction.main(args);
         ShippingCosts.main(args);
+        MoneyMachine.main(args);
     }
 }
 
