@@ -60,7 +60,6 @@ public class Task5 {
     /**
      * Generiert eine zufällige Zahl zwischen 1 und 100 (einschließlich) und gibt sie in der Konsole aus.
      *
-     * @param none
      * @return void
      */
     // Aufgabe 5.4
