@@ -1,38 +1,3 @@
-# 🏫 11BG G School Projects 📚
-
-## 🌐 Overview
-
-This repository contains all the code 📁 for the school year for class 11BG G.
-
-## 🛠 Languages and Tools
-
-- Java ☕
-- Kotlin <img src="./images/kotlin.png" width="20" height="20">
-- Ktor 🌐
-- PostgreSQL 🐘
-- Redis 📔
-
-## 📋 Table of Contents
-
-- [Semester 1](#semester-1)
-- [Semester 2](#semester-2)
-
-## 📚 Semester 1
-
-- 📘 Project 1
-- 📗 Project 2
-
-## 📚 Semester 2
-
-- 📙 Project 3
-- 📕 Project 4
-
-## 👨‍💻 Author
-
-Lukas
-
----
-
 # 🏫 Chronicles of the 11BG G Codex 📚
 
 ## Prologue
@@ -42,6 +7,15 @@ You've stumbled upon the sacred scripts where 11BG G chronicles its code creatio
 "experimental runes".
 But heed this warning: the codekeeper Lukas watches over
 these scrolls with an eagle's gaze. 🦉
+
+## Languages and Tools 🛠
+
+- Java ☕
+- Kotlin <img src="./images/kotlin.png" width="20" height="20">
+- Ktor 🌐
+- PostgreSQL 🐘
+- Redis 📦
+
 
 ## Lukas's Code Castle 🏰
 
@@ -53,8 +27,8 @@ his keyboard is not enchanted (or so we think).
 
 ## Diving into the Depths 📜
 
-- `JavaJourney/`: Where coffee beans turn into clean code.
-- `KotlinKorner/`: The land lit by the Kotlin constellations.
+- `Dica's Microsoft Missions/`: Where the microsoft suit is fully used to pursue new dreams.
+- `Mr Big's Website Workshop/`: New ventures in the world of web development.
 - `iOSIsles/`: Sail to
   the [external archipelago](https://github.com/cancel-cloud/iOSDevelopmentExploration?tab=readme-ov-file) where Apple
   orchards grow apps aplenty.
