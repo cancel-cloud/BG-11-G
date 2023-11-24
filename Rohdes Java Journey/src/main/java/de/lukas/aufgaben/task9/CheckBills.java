@@ -5,7 +5,6 @@ import java.util.Scanner;
 public class CheckBills {
 
 
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Gib die Seriennummer des Geldscheins ein (ohne Leerzeichen):");
@@ -17,7 +16,6 @@ public class CheckBills {
             System.out.println("Die Seriennummer ist nicht korrekt.");
         }
     }
-
 
 
     public static boolean istSeriennummerKorrekt(String seriennummer) {
