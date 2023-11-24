@@ -1,0 +1,7 @@
+Nr.1
+Ein Interpreter übersetzt den Programmcode, welcher verwendet wird, nur dann, wenn der code am ablaufen ist. Der Code wird Zeile für Zeile erst übersetzt, wenn er gebraucht wird.
+Ein Compiler wird z.B.: bei der Programmiersprache Java verwendet, dort muss der Programmcode einmal komplett übersetzt werden zu Bytecode und es kommt eine verwendbare datei (*.jar) herraus,
+welche nun verwendet werden kann.
+
+Nr.2
+Java wird durch den Compiler auf (Java)-Bytecode übersetzt / compiled, welcher nach dem compilen verwendet werden kann.
