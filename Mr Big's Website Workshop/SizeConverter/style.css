@@ -1,0 +1,92 @@
+/* Grundlegende Einstellungen */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: papayawhip;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.title {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin-bottom: 20px;
+}
+
+.label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+}
+
+.inp {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.button {
+    width: 100%;
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+.button-content {
+    font-weight: bold;
+}
+
+#resultID {
+    text-align: center;
+    margin-top: 20px;
+    color: #333;
+}
+
+.footer-description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    color: white;
+
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 128, 117, 0.4);
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: none;
+}
