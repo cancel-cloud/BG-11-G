@@ -1,23 +1,29 @@
-package de.lukas.aufgaben.exams.exam;
+package de.lukas.aufgaben.exams.corrected;
 
 public class Task3 {
 
     public static void main(String[] args) {
-        //vordefinierte anzahl an zeilen
-        int starcount = 4;
-        //zeichen welches ausgegeben werden soll
+        // Aufruf der Methode printStarPattern mit dem Wert 4 für die Anzahl der Zeilen
+        printStarPattern(4);
+    }
+
+    /**
+     * Diese Methode druckt ein Muster aus Sternen, basierend auf der angegebenen Zeilenzahl.
+     * @param starCount Anzahl der Zeilen des Musters
+     */
+    private static void printStarPattern(int starCount) {
+        // Zeichen, das im Muster verwendet wird (hier Stern)
         String zeichen = "*";
 
-        //erste schleife, welche die Zeilenanzahl angibt
-        for (int i = 0; i<starcount; i++) {
-            //zweite schleife, welche ausgibt, wie viele zeichen in einer Zeile sein sollten
-            for (int j=0; j<=i; j++) {
-                //gebe das zeichen so lange aus, wie j kleiner gleich i ist
+        // Äußere Schleife: Steuert die Anzahl der Zeilen
+        for (int i = 0; i < starCount; i++) {
+            // Innere Schleife: Steuert die Anzahl der Zeichen in jeder Zeile
+            for (int j = 0; j <= i; j++) {
+                // Druckt das Zeichen (Stern) in einer Zeile
                 System.out.print(zeichen);
             }
-            //leere Zeile am Ende, damit das Ende zu erkennen ist
+            // Erzeugt einen Zeilenumbruch nach dem Füllen einer Zeile mit Sternen
             System.out.println();
         }
-
     }
 }

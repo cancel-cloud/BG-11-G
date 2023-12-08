@@ -6,4 +6,11 @@ Ein Compiler wird z.B.: bei der Programmiersprache Java verwendet, dort muss der
 welche nun verwendet werden kann.
 
 Nr.2
-Java wird durch den Compiler auf (Java)-Bytecode übersetzt / compiled, welcher nach dem compilen verwendet werden kann.
+### Verbesserte Erklärung:
+
+Java-Code wird zunächst durch den Compiler in Java-Bytecode übersetzt. Dieser Bytecode ist eine Zwischenform,
+die nicht direkt von der Hardware ausgeführt werden kann. Hier kommt die Java Virtual Machine (JVM) ins Spiel, die
+für Java charakteristisch ist. Die JVM ist eine virtuelle Maschine, die diesen Bytecode ausführt. Sie fungiert als eine Art
+Zwischenschicht zwischen dem Bytecode und der Hardware. Dadurch ermöglicht sie die Plattformunabhängigkeit von Java, da der
+gleiche Bytecode auf verschiedenen Hardware-Plattformen ausgeführt werden kann, solange eine JVM vorhanden ist. Diese Fähigkeit
+unterscheidet Java von vielen anderen Programmiersprachen, die direkt in maschinenspezifischen Code übersetzt werden.

@@ -1,4 +1,4 @@
-package de.lukas.aufgaben.exams.exam;
+package de.lukas.aufgaben.exams.corrected;
 
 import java.util.Scanner;
 
@@ -17,7 +17,9 @@ public class Task4 {
             //wenn 0 dann hören wir auf
             if (read == 0) break;
             //addieren zur gesammt Summe
-            sumOfInput =+ read;
+            // Korrekte Addition zur Gesamtsumme
+            sumOfInput += read;
+
         }
         //Ausgeben der GesammtSumme
         System.out.println("Die Summe aller Eingaben ist: " + sumOfInput);
