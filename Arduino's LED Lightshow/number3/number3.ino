@@ -12,19 +12,19 @@ void setup() {
 void loop() {
   // Rote Phase
   digitalWrite(redLED, HIGH);
-  delay(1000); // Rote Phase für 1 Sekunde
+  delay(3000); // Rote Phase für 1 Sekunde
   digitalWrite(redLED, LOW);
   
   // Rot-Gelbe Phase
   digitalWrite(redLED, HIGH);
   digitalWrite(yellowLED, HIGH);
-  delay(1000); // Rot-Gelb für 1 Sekunde
+  delay(1250); // Rot-Gelb für 1 Sekunde
   digitalWrite(redLED, LOW);
   digitalWrite(yellowLED, LOW);
   
   // Grüne Phase
   digitalWrite(greenLED, HIGH);
-  delay(1000); // Grüne Phase für 1 Sekunde
+  delay(2000); // Grüne Phase für 1 Sekunde
   digitalWrite(greenLED, LOW);
   
   // Gelbe Phase
