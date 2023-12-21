@@ -3,17 +3,17 @@ body {
     background-color: #f4f4f4;
     text-align: center;
     padding: 20px;
-    background: linear-gradient(45deg, #ad2d2d, #555);
+    background: linear-gradient(45deg, #08ccda, #555);
     background-size: 400% 400%;
     background-repeat: no-repeat;
 }
 
 .container {
-    background: white;
+    background: rgb(4, 160, 227);
     margin: auto;
-    width: 50%;
+    width: 30%;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(4, 142, 227, 2);
 }
 
 textarea, input {
@@ -38,4 +38,26 @@ button:hover {
 #result {
     margin-top: 20px;
     color: green;
+}
+
+
+.footer-description {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 10px; /* Adjust margin-top as needed */
+    color: white;
+    /* Make the link no appear as a link */
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.299);
+    color: white;
+    margin-bottom: 0px;
+    text-decoration: none;
 }
