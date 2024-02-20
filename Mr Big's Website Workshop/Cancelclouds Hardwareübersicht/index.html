@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hardware Übersicht</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="code.js" defer></script>
+    <link rel="icon" href="../Hardwarer/Stacked.svg" type="image/png" sizes="16x16">
+</head>
+<body>
+<div class="topSection">
+    <div class="title">
+        Hardware Übersicht
+    </div>
+    <div class="projectDescription">
+        produced by Lukas
+    </div>
+</div>
+<div class="components" id="components">
+</div>
+</body>
+
+<footer style="text-align: center;">
+    <div class="footercontent">
+        <p>My GitHub:
+            <a href="https://github.com/cancel-cloud">cancel-cloud</a>
+        </p>
+        <p>
+            Page loaded in <span id="load-time"></span>
+        </p>
+        <p>All rights of the pictures as well as the linked videos go to their authors.</p>
+    </div>
+
+</footer>
+
+<script>
+    const startTime = performance.now();
+    window.addEventListener("DOMContentLoaded", function () {
+        const loadTime = performance.now() - startTime;
+        document.getElementById("load-time").innerHTML = loadTime.toFixed(2) + " ms";
+    });
+</script>
+
+</html>
