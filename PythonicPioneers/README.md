@@ -105,24 +105,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ---
 
 Feel free to contribute and raise issues on GitHub!
-```
-
-### Instructions for Creating the Conda Environment and Installing Packages
-
-1. **Create the Conda Environment:**
-    ```bash
-    conda create -n school python=3.10
-    ```
-
-2. **Activate the Conda Environment:**
-    ```bash
-    conda activate school
-    ```
-
-3. **Install Required Packages:**
-    ```bash
-    conda install -c conda-forge psutil gputil streamlit matplotlib jupyter
-    pip install mplcursors
-    ```
-
-This `README.md` file provides a comprehensive guide for setting up the environment, running the application, and understanding the project structure. Make sure to replace the placeholders like `yourusername` and `your-repo-name` with the actual values relevant to your GitHub repository.
