@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2048 Game</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #board {
+            display: grid;
+            grid-template-columns: repeat(4, 100px);
+            grid-gap: 5px;
+            margin: 0 auto;
+        }
+        .tile {
+            width: 100px;
+            height: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #ccc;
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <h1>2048 Game</h1>
+    <div id="score">Score: 0</div>
+    <div id="board"></div>
+    <button onclick="makeMove()">Next Move</button>
+    <button onclick="resetGame()">Reset Game</button>
+    <label>
+        <input type="checkbox" id="autoMoveToggle"> Auto Move
+    </label>
+    <script>
+        const boardElement = document.getElementById('board');
+        const scoreElement = document.getElementById('score');
+        const autoMoveToggle = document.getElementById('autoMoveToggle');
+        let autoMoveInterval = null;
+
+        function renderBoard(board, score) {
+            boardElement.innerHTML = '';
+            scoreElement.textContent = 'Score: ' + score;
+            for (let row of board) {
+                for (let tile of row) {
+                    const tileElement = document.createElement('div');
+                    tileElement.className = 'tile';
+                    tileElement.textContent = tile === 0 ? '' : tile;
+                    boardElement.appendChild(tileElement);
+                }
+            }
+        }
+
+        function makeMove() {
+            fetch('/move', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    renderBoard(data.board, data.score);
+                });
+        }
+
+        function resetGame() {
+            fetch('/reset', { method: 'POST' })
+                .then(response => response.json())
+                .then(data => {
+                    renderBoard(data.board, data.score);
+                });
+        }
+
+        function move(direction) {
+            fetch('/move', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify({ direction: direction }),
+            })
+            .then(response => response.json())
+            .then(data => {
+                renderBoard(data.board, data.score);
+            });
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'ArrowUp') {
+                move('up');
+            } else if (event.key === 'ArrowDown') {
+                move('down');
+            } else if (event.key === 'ArrowLeft') {
+                move('left');
+            } else if (event.key === 'ArrowRight') {
+                move('right');
+            }
+        });
+
+        autoMoveToggle.addEventListener('change', function() {
+            if (this.checked) {
+                autoMoveInterval = setInterval(makeMove, 500);
+            } else {
+                clearInterval(autoMoveInterval);
+                autoMoveInterval = null;
+            }
+        });
+
+        // Initial board render
+        makeMove();
+    </script>
+</body>
+</html>
